@@ -1,136 +1,365 @@
 {
   "Global": {
-    "By Product Type": {
+    "By Product Type X Feeding Stage X Ingredients": {
       "Conventional Standard Infant Formula": {
-        "By Protein System (Conventional)": {
-          "Whey-dominant formula": {},
-          "Whey-casein blend formula": {},
-          "Casein-adjusted formula": {},
-          "Demineralised whey-based formula": {}
+        "Stage 1": {
+          "Proteins": {
+            "Whey protein": {},
+            "Whey protein isolate": {},
+            "Casein": {},
+            "Demineralized whey": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "FOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         },
-        "By Lipid System (Conventional)": {
-          "DHA-fortified formula": {},
-          "DHA + ARA fortified formula": {},
-          "Fish oil-derived DHA formula": {},
-          "Algal DHA formula": {},
-          "Algal DHA + fungal ARA formula": {}
+        "Stage 2": {
+          "Proteins": {
+            "Whey protein": {},
+            "Whey protein isolate": {},
+            "Casein": {},
+            "Demineralized whey": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "FOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         },
-        "By Functional Ingredient Enrichment (Conventional)": {
-          "Formula with probiotics": {},
-          "Formula with prebiotics": {},
-          "Formula with HMOs": {},
-          "Formula with synbiotics": {},
-          "Formula with combined functional ingredients": {}
+        "Stage 3": {
+          "Proteins": {
+            "Whey protein": {},
+            "Whey protein isolate": {},
+            "Casein": {},
+            "Demineralized whey": {},
+            "Partially hydrolysed whey protein": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "FOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         }
       },
       "Organic / Clean-Label Standard Infant Formula": {
-        "By Protein System (Organic)": {
-          "Organic whey-based formula": {},
-          "Organic whey-casein blend formula": {},
-          "Organic demineralised whey-based formula": {}
+        "Stage 1": {
+          "Proteins": {
+            "Whey protein": {},
+            "Whey protein isolate": {},
+            "Casein": {},
+            "Demineralized whey": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "FOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         },
-        "By Lipid System (Organic)": {
-          "Organic DHA-fortified formula": {},
-          "Organic DHA + ARA fortified formula": {},
-          "Organic algal DHA formula": {}
+        "Stage 2": {
+          "Proteins": {
+            "Whey protein": {},
+            "Whey protein isolate": {},
+            "Casein": {},
+            "Demineralized whey": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "FOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         },
-        "By Functional Ingredient Enrichment (Organic)": {
-          "Organic formula with probiotics": {},
-          "Organic formula with prebiotics": {},
-          "Organic formula with HMOs": {},
-          "Organic formula with synbiotics": {},
-          "Organic formula with combined functional ingredients": {}
+        "Stage 3": {
+          "Proteins": {
+            "Whey protein": {},
+            "Whey protein isolate": {},
+            "Casein": {},
+            "Demineralized whey": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "FOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         }
       },
       "Plant-Based Standard Infant Formula": {
-        "By Protein System (Plant-Based)": {
-          "Soy-based formula": {},
-          "Soy protein isolate-based formula": {},
-          "Rice-based formula": {},
-          "Other plant protein-based formula": {}
+        "Stage 1": {
+          "Proteins": {
+            "Soy protein": {},
+            "Rice protein": {},
+            "Other plant proteins": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         },
-        "By Lipid System (Plant-Based)": {
-          "Plant-based formula with algal DHA": {},
-          "Plant-based formula with DHA + ARA alternatives": {},
-          "Vegan omega-fortified formula": {}
+        "Stage 2": {
+          "Proteins": {
+            "Soy protein": {},
+            "Rice protein": {},
+            "Other plant proteins": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         },
-        "By Functional Ingredient Enrichment (Plant-Based)": {
-          "Plant-based formula with probiotics": {},
-          "Plant-based formula with prebiotics": {},
-          "Plant-based formula with HMOs": {},
-          "Plant-based formula with synbiotics": {},
-          "Plant-based formula with combined functional ingredients": {}
+        "Stage 3": {
+          "Proteins": {
+            "Soy protein": {},
+            "Rice protein": {},
+            "Other plant proteins": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         }
       },
-      "Comfort / Partially Hydrolysed Standard Infant Formula": {
-        "By Protein System (Comfort)": {
-          "Partially hydrolysed whey protein formula": {},
-          "Partially hydrolysed whey-dominant blend formula": {}
+      "Comfort / Partially Hydrolized Standard Infant Formula": {
+        "Stage 1": {
+          "Proteins": {
+            "Partially hydrolized whey protein": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "FOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         },
-        "By Lipid System (Comfort)": {
-          "Comfort formula with DHA": {},
-          "Comfort formula with DHA + ARA": {},
-          "Comfort formula with algal DHA": {}
-        },
-        "By Functional Ingredient Enrichment (Comfort)": {
-          "Comfort formula with probiotics": {},
-          "Comfort formula with prebiotics": {},
-          "Comfort formula with HMOs": {},
-          "Comfort formula with synbiotics": {},
-          "Comfort formula with combined digestive-support ingredients": {}
+        "Stage 2": {
+          "Proteins": {
+            "Partially hydrolized whey protein": {}
+          },
+          "Lipids": {
+            "DHA": {},
+            "ARA": {},
+            "DHA + ARA blends": {}
+          },
+          "Probiotics": {
+            "Bifidobacterium species": {},
+            "Lactobacillus species": {},
+            "Other probiotic species": {}
+          },
+          "Prebiotics": {
+            "GOS": {},
+            "FOS": {},
+            "Inulin": {},
+            "GOS/FOS": {},
+            "Other prebiotic fibres": {}
+          },
+          "HMOs": {
+            "2'FL": {},
+            "LnNT": {},
+            "2'FL + LnNT blends": {},
+            "Other single HMOs": {},
+            "Multi-HMO systems": {}
+          }
         }
       }
     },
-    "By Ingredient Category": {
-      "Proteins": {
-        "Whey protein": {},
-        "Whey protein isolate": {},
-        "Casein": {},
-        "Demineralised whey": {},
-        "Partially hydrolysed whey protein": {},
-        "Soy protein": {},
-        "Rice protein": {},
-        "Other plant proteins": {}
-      },
-      "Lipids": {
-        "DHA": {},
-        "ARA": {},
-        "DHA + ARA blends": {}
-      },
-      "Probiotics": {
-        "Bifidobacterium species": {},
-        "Lactobacillus species": {},
-        "Other probiotic species": {}
-      },
-      "Prebiotics": {
-        "GOS": {},
-        "FOS": {},
-        "Inulin": {},
-        "GOS/FOS blends": {},
-        "Other prebiotic fibres": {}
-      },
-      "HMOs": {
-        "2'FL": {},
-        "LnNT": {},
-        "2'FL + LnNT blends": {},
-        "Other single HMOs": {},
-        "Multi-HMO systems": {}
-      }
-    },
-    "By Feeding Stage": {
-      "Stage 1 / First Infant Formula (0\u20136 months)": {},
-      "Stage 2 / Follow-On Formula (6\u201312 months)": {},
-      "Stage 3 / Toddler Formula / Growing-Up Milk (12\u201336 months)": {}
-    },
-    "By Functional Enrichment Profile": {
-      "Core nutrition formula": {},
+    "By Functional Enrichment Profile Stage": {
+      "Core Nutrition Formula": {},
       "Probiotic-enriched formula": {},
       "Prebiotic-enriched formula": {},
       "HMO-enriched formula": {},
       "Synbiotic formula": {},
       "Advanced functional formula": {}
     },
-    "By Distribution Channel": {
+    "By Distribution Channel Stage": {
       "Hospital / Institutional": {},
       "Pharmacy / Drug Store": {},
       "Supermarket / Hypermarket": {},
