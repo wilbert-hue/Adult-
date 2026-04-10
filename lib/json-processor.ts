@@ -1266,6 +1266,18 @@ export async function processJsonDataAsync(
       throw new Error('No geographies found in any data source. Please check your JSON structure.')
     }
 
+    // Always merge ALL geographies from value data so individual countries/regions
+    // defined in value.json are never omitted (even if segmentation.json only has "Global")
+    if (valueData) {
+      const valueGeos = Object.keys(valueData).filter(key => {
+        const val = (valueData as any)[key]
+        return val && typeof val === 'object' && !Array.isArray(val)
+      })
+      valueGeos.forEach(geo => {
+        if (!geographies.includes(geo)) geographies.push(geo)
+      })
+    }
+
     // Extract regions AND countries from "By Region" segment type as additional geographies
     // This builds a full geography hierarchy: Global > Regions > Countries
     const regionGeographies: string[] = []
@@ -1275,7 +1287,7 @@ export async function processJsonDataAsync(
       const geoData = structureData[topGeo]
       if (geoData && typeof geoData === 'object') {
         // Look for "By Region" segment type
-        const byRegionData = geoData['By Region']
+        const byRegionData = (geoData as any)['By Region']
         if (byRegionData && typeof byRegionData === 'object') {
           // Extract region names (first level keys under "By Region")
           const regions = Object.keys(byRegionData).filter(key => {
@@ -1306,14 +1318,39 @@ export async function processJsonDataAsync(
       }
     }
 
+    // Fallback: if no hierarchy was detected from "By Region", infer it from known
+    // geographic patterns present in the data (works for standard world-region breakdowns)
+    if (regionGeographies.length === 0) {
+      const geoSet = new Set(geographies)
+      const KNOWN_REGION_HIERARCHY: Record<string, string[]> = {
+        'North America':    ['U.S.', 'Canada'],
+        'Europe':           ['Germany', 'France', 'UK', 'Italy', 'Spain', 'Rest of Western Europe', 'Eastern Europe', 'Western Europe'],
+        'Asia Pacific':     ['China', 'Vietnam', 'Singapore', 'Japan', 'South Korea', 'Thailand', 'Indonesia', 'Malaysia', 'India', 'Pakistan', 'Rest of Asia Pacific', 'Rest of Asia Pacific (CIS, Australia/NZ, etc.)', 'Australia', 'New Zealand', 'South Korea'],
+        'Latin America':    ['Brazil', 'Mexico', 'Rest of Latin America', 'Argentina', 'Colombia', 'Chile'],
+        'Middle East & Africa': ['UAE', 'Saudi Arabia', 'South Africa', 'Rest of MEA', 'Israel', 'Turkey'],
+        'Rest of World':    [],
+      }
+      for (const [region, candidates] of Object.entries(KNOWN_REGION_HIERARCHY)) {
+        if (geoSet.has(region)) {
+          const presentCountries = candidates.filter(c => geoSet.has(c))
+          if (presentCountries.length > 0) {
+            if (!regionGeographies.includes(region)) regionGeographies.push(region)
+            regionToCountries[region] = presentCountries
+            presentCountries.forEach(c => { if (!allCountries.includes(c)) allCountries.push(c) })
+          }
+        }
+      }
+      console.log(`Inferred ${regionGeographies.length} regions from known hierarchy:`, regionGeographies)
+    }
+
     // Add regions and countries to geographies list
     if (regionGeographies.length > 0) {
       console.log(`Found ${regionGeographies.length} regions from "By Region":`, regionGeographies)
-      geographies = [...geographies, ...regionGeographies]
+      geographies = [...geographies, ...regionGeographies.filter(r => !geographies.includes(r))]
     }
     if (allCountries.length > 0) {
       console.log(`Found ${allCountries.length} countries from "By Region":`, allCountries)
-      geographies = [...geographies, ...allCountries]
+      geographies = [...geographies, ...allCountries.filter(c => !geographies.includes(c))]
     }
 
     console.log(`Found ${geographies.length} total geographies:`, geographies)
