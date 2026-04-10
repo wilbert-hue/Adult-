@@ -204,7 +204,7 @@ export default function DashboardPage() {
                 Coherent Dashboard
               </h1>
               <h2 className="text-sm text-black">
-                {dashboardName || 'Global Standard Infant Formula Industry Analysis Market'}
+                {dashboardName || 'Global Adult Medical Nutrition Industry Analysis Market'}
               </h2>
             </div>
           </div>

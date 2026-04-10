@@ -1472,7 +1472,7 @@ export async function processJsonDataAsync(
     
     // Build metadata
     const metadata: Metadata = {
-      market_name: 'Standard Infant Formula Industry Analysis  Market',
+      market_name: 'Adult Medical Nutrition Industry Analysis Market',
       market_type: 'Market Analysis',
       industry: 'Food & Nutrition',
       years: allYears,
